@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--TOTAL-->
+    <TextView
+        android:id="@+id/contadorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/contador1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/resetTotal"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/resetTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset All"
+        app:layout_constraintBottom_toTopOf="@id/reset1"
+        app:layout_constraintLeft_toRightOf="@id/contadorTotal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--PRIMERA FILA-->
+    <TextView
+        android:id="@+id/contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/contador2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/clic1"
+        app:layout_constraintTop_toBottomOf="@id/contadorTotal" />
+    <Button
+        android:id="@+id/clic1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/clic2"
+        app:layout_constraintLeft_toRightOf="@id/contador1"
+        app:layout_constraintRight_toLeftOf="@id/reset1"
+        app:layout_constraintTop_toBottomOf="@id/resetTotal" />
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@id/reset2"
+        app:layout_constraintLeft_toRightOf="@id/clic1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resetTotal" />
+
+    <!--SEGUNDA FILA-->
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/contador3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/clic2"
+        app:layout_constraintTop_toBottomOf="@id/contador1" />
+    <Button
+        android:id="@+id/clic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/clic3"
+        app:layout_constraintLeft_toRightOf="@id/contador2"
+        app:layout_constraintRight_toLeftOf="@id/reset2"
+        app:layout_constraintTop_toBottomOf="@id/clic1" />
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@id/reset3"
+        app:layout_constraintLeft_toRightOf="@id/clic2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset1" />
+
+    <!--TERCERA FILA-->
+    <TextView
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/contador4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/clic3"
+        app:layout_constraintTop_toBottomOf="@id/contador2" />
+    <Button
+        android:id="@+id/clic3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/clic4"
+        app:layout_constraintLeft_toRightOf="@id/contador3"
+        app:layout_constraintRight_toLeftOf="@id/reset3"
+        app:layout_constraintTop_toBottomOf="@id/clic2" />
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@id/reset4"
+        app:layout_constraintLeft_toRightOf="@id/clic3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset2" />
+
+    <!--CUARTA FILA-->
+    <TextView
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/clic4"
+        app:layout_constraintTop_toBottomOf="@id/contador3" />
+    <Button
+        android:id="@+id/clic4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/contador4"
+        app:layout_constraintRight_toLeftOf="@id/reset4"
+        app:layout_constraintTop_toBottomOf="@id/clic3" />
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/clic4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
